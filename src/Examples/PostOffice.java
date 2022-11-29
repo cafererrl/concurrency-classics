@@ -1,3 +1,5 @@
+package Tasks;
+
 import java.util.*;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -8,7 +10,7 @@ public class PostOffice {
     static int numInboxCapacity; // S - number of messages a mailer's inbox can hold
     static int numTotalMessages; // M - number of total messages to be sent
     static AtomicInteger mailSerial = new AtomicInteger(0);
-    static AtomicInteger numMessagesSent = new AtomicInteger(0); // TODO make regular int and add mutex around this value
+    static AtomicInteger numMessagesSent = new AtomicInteger(0);
 
     static MailPerson[] directory;
     static String[] chatter = new String[] {
@@ -45,8 +47,8 @@ public class PostOffice {
         // Constructor
         private MailPerson(int numInboxCapacity, int numTotalMessages) {
             this.id = mailSerial.getAndIncrement();
-            PostOffice.numInboxCapacity = numInboxCapacity; // TODO Delete ME
-            PostOffice.numTotalMessages = numTotalMessages; // TODO Delete ME
+//            PostOffice.numInboxCapacity = numInboxCapacity; // TODO Delete ME
+//            PostOffice.numTotalMessages = numTotalMessages; // TODO Delete ME
         }
 
         void sendMessage() {
@@ -118,7 +120,7 @@ public class PostOffice {
 
 
     // Driver
-    public static void main(String[] args) {
+    public static void main() {
         // Init to nonsense value.
         int numMailers = -1; // N
         int numMaxMessages = -1; // S

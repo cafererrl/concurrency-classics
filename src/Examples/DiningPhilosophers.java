@@ -1,4 +1,5 @@
-// Carl Ali Ferré - C00485452
+// Authored: Carl Ali Ferré, 11/28/22
+package Tasks;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.concurrent.Semaphore;
@@ -73,7 +74,6 @@ public class DiningPhilosophers {
             start_barrier.release(); // Open the flood gate
 
             // GOOD FOOD GOOD MEAT GOOD GOD LET'S EAT.
-            // try while true with try catch on numMEals.aquireuninterruptibly in order to BLOCK and then finally releasE?
             while (numMeals.availablePermits() > 0) {
                 attemptEating();
             }
@@ -147,7 +147,7 @@ public class DiningPhilosophers {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main() {
         int numPhilosophers = -1; // Init to nonsense value.
         int numMeals = -1;
 

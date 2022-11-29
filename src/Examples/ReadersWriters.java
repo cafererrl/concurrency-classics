@@ -1,3 +1,5 @@
+package Tasks;
+
 import java.util.InputMismatchException;
 import java.util.Objects;
 import java.util.Random;
@@ -117,7 +119,7 @@ public class ReadersWriters {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main() {
         // Init to nonsense value.
         int numReaders = -1; // number of Readers
         int numWriters = -1; // number of Writers
