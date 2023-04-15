@@ -1,4 +1,4 @@
-package Tasks;
+package Examples;
 
 import java.util.InputMismatchException;
 import java.util.Objects;

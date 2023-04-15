@@ -1,4 +1,4 @@
-package Tasks;
+package Examples;
 
 import java.util.*;
 import java.util.concurrent.Semaphore;

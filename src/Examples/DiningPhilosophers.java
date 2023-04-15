@@ -1,5 +1,5 @@
 // Authored: Carl Ali Ferré, 11/28/22
-package Tasks;
+package Examples;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.concurrent.Semaphore;
